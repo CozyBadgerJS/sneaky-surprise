@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaky Snake Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/breathing-personal-use"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- First Page -->
+    <section id="first-page">
+      <img src="img/hbd.gif" class="gift-box" onclick="showPage('main-page')" />
+    </section>
+
+    <!-- Main Page -->
+    <section id="main-page" class="hidden">
+      <h1 class="hello cursive fade-in">Hello</h1>
+      <h1 class="my-love cursive fade-in">My love!</h1>
+      <p class="wanna-see-gift fade-in">Do you want to open your gift?</p>
+      <button class="button fade-in" onclick="showPage('gallery-page')">
+        Yes, please</button
+      ><button class="button fade-in" onclick="showPage('no-page')">
+        No, thanks
+      </button>
+    </section>
+
+    <!-- No Thanks Page -->
+    <section id="no-page" class="hidden">
+      <img src="img/sad.gif" class="sad" />
+
+      <h1 class="no-thanks">please, promise you'll like it ;n;</h1>
+      <button class="button" onclick="showPage('main-page')">Try again</button>
+    </section>
+
+    <!-- Gallery Page -->
+    <section id="gallery-page" class="hidden">
+      <h1 class="cursive these-are-for-you">These are for you!</h1>
+      <p class="hope-you-like-it">Hope you like it</p>
+      <div class="gallery">
+        <img
+          src="img/button photo.png"
+          class="gallery-button"
+          onclick="showPage('gallery-1')"
+        />
+        <img
+          src="img/button flower.png"
+          class="gallery-button"
+          onclick="showPage('gallery-2')"
+        />
+        <img
+          src="img/button music.png"
+          class="gallery-button"
+          onclick="showPage('gallery-3')"
+        />
+        <img
+          src="img/button letter.png"
+          class="gallery-button"
+          onclick="showPage('gallery-4')"
+        />
+      </div>
+
+      <button
+        class="button button-back-to-start"
+        onclick="showPage('main-page')"
+      >
+        Back to Start
+      </button>
+    </section>
+
+    <!-- Gallery 1 Page -->
+    <!-- <section id="gallery-1" class="hidden">
+      <h1 class="cursive tejona-y-culebras">La tejona y el culebras</h1>
+
+      <img src="img/collage.png" class="collage" />
+
+      <button
+        class="button return-btn return-left"
+        onclick="showPage('gallery-page')"
+      >
+        Return
+      </button> -->
+
+    <section id="gallery-1" class="hidden">
+      <h1 class="cursive tejona-y-culebras">La tejona y el culebras</h1>
+      <div class="collage-container">
+        <img src="img/photo (1).png" class="collage-img" />
+        <img src="img/photo (2).png" class="collage-img" />
+        <img src="img/photo (3).png" class="collage-img" />
+        <img src="img/photo (4).png" class="collage-img" />
+        <img src="img/memories.png" class="collage-img" />
+      </div>
+      <button
+        class="button return-btn return-left"
+        onclick="showPage('gallery-page')"
+      >
+        Return
+      </button>
+    </section>
+
+    <!-- </section> -->
+
+    <!-- Gallery 2 Page -->
+    <section id="gallery-2" class="hidden">
+      <h1 class="cursive garden-for-you">A garden for you</h1>
+      <div class="flower-container">
+        <div class="flower-title">
+          <h3 class="flower-trait">Happiness</h3>
+          <img src="img/flower (1).png" class="flower" />
+          <div class="hover-text">
+            May happiness always find its way to you, in big and small moments
+            🌻
+          </div>
+        </div>
+
+        <div class="flower-title">
+          <h3 class="flower-trait">Beauty</h3>
+          <img src="img/flower (2).png" class="flower" />
+          <div class="hover-text">For the most handsome, inside and out 🌷</div>
+        </div>
+        <div class="flower-title">
+          <h3 class="flower-trait">Love</h3>
+          <img src="img/flower (3).png" class="flower" />
+          <div class="hover-text">
+            May you always feel how much you're loved 🌹
+          </div>
+        </div>
+        <div class="flower-title">
+          <h3 class="flower-trait">Hope</h3>
+          <img src="img/flower (4).png" class="flower" />
+          <div class="hover-text">
+            Whatever challenges come, may you always carry hope like a flame
+            that never goes out 🪻
+          </div>
+        </div>
+        <div class="flower-title">
+          <h3 class="flower-trait">Success</h3>
+          <img src="img/flower (5).png" class="flower" />
+          <div class="hover-text">
+            May success follow you in every adventure, just like I'll always be
+            cheering you on 🏵️
+          </div>
+        </div>
+      </div>
+      <button class="button return-btn" onclick="showPage('gallery-page')">
+        Return
+      </button>
+    </section>
+
+    <!-- Gallery 3 Page -->
+    <section id="gallery-3" class="hidden">
+      <h1 class="cursive reminds-me">This reminds me</h1>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/H4Ul-TCt3sM"
+        title="YouTube video"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p class="just-you-dear">it's just you, my dear</p>
+      <button class="button return-btn" onclick="showPage('gallery-page')">
+        Return
+      </button>
+    </section>
+
+    <!-- Gallery 4 Page -->
+
+    <section id="gallery-4" class="hidden letter">
+      <div class="letter-grid">
+        <div class="letter-text">
+          <p class="letter-line">Happy Birthday, my sneaky snake 🐍</p>
+          <p class="letter-line">
+            Strong, smart, competent, and so endlessly charming, that's you.
+            Thank you for always being there, for being the steady,
+            understanding, and brilliant person I can always count on. You make
+            the days lighter and better just by being you.
+          </p>
+
+          <p class="letter-line">
+            I hope this year, and the rest of your life, brings you happiness,
+            success, peace, and all the good things you deserve. I'll be right
+            here cheering for you every step of the way. Happy Birthday again,
+            my favorite sneaky snake💚
+          </p>
+
+          <p class="letter-line">With love, your tejona 💛</p>
+        </div>
+
+        <!-- Right side is empty -->
+      </div>
+      <button
+        class="button return-btn return-left"
+        onclick="showPage('gallery-page')"
+      >
+        Return
+      </button>
+    </section>
+
+    <script>
+      function showPage(pageId) {
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.add("hidden");
+        });
+        document.getElementById(pageId).classList.remove("hidden");
+      }
+
+      function toggleText(image) {
+        let textBox = image.nextElementSibling;
+        if (textBox.style.display === "block") {
+          textBox.style.display = "none";
+        } else {
+          document
+            .querySelectorAll(".click-text")
+            .forEach((t) => (t.style.display = "none"));
+          textBox.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
